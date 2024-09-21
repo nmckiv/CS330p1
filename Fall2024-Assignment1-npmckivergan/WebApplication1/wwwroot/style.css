@@ -1,0 +1,107 @@
+﻿/* Ensure the body and html take up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Use Flexbox to center the div horizontally and vertically */
+body {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100vh; /* Ensure full viewport height is used */
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Container for media info */
+#media-info {
+    width: 80%; /* Set a max width to keep it centered */
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+#Title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Rectangular image with rounded edges */
+#CoverArt {
+    width: 300px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height to make it rectangular */
+    border-radius: 20px; /* This will round the corners */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    margin-bottom: 20px;
+}
+
+/* Rating styling */
+#Rating {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Ensure the iframe and link are stacked vertically */
+iframe {
+    display: block; /* Make iframe a block element to ensure it takes up its own line */
+    margin: 0 auto 20px auto; /* Center the iframe and add space below it */
+}
+
+a {
+    display: block; /* Make the link a block element to ensure it takes up its own line */
+    margin: 0 auto; /* Center the link horizontally */
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    a:hover {
+        background-color: #e0e0e0;
+        text-decoration: underline;
+    }
+
+/* Summary text */
+#Summary {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #555;
+}
+
+#Actors {
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly across the available space */
+    padding: 0;
+    margin: 0 auto; /* Center the container itself horizontally */
+    list-style-type: none; /* Remove bullet points */
+    max-width: 600px; /* Set a maximum width for the container */
+}
+
+#Actors li {
+    flex-basis: 48%; /* Keep two columns */
+    margin-bottom: 10px; /* Add space below each item */
+    text-align: right; /* Align text to the left */
+    display: flex; /* Use flex to align image and text side by side */
+    align-items: center; /* Align the image and text vertically */
+}
+
+.actor-img {
+    width: 40px; /* Adjust the size of the actor image */
+    height: 40px; /* Ensure the image is square */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Add space between the image and the name */
+    object-fit: cover; /* Ensure the image fits the box */
+}
