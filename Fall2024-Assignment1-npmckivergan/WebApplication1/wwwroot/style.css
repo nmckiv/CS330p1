@@ -1,25 +1,22 @@
-﻿/* Ensure the body and html take up full height */
-html, body {
+﻿html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* Use Flexbox to center the div horizontally and vertically */
 body {
     display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: flex-start; /* Align items closer to the top */
-    min-height: 100vh; /* Ensure full viewport height is used */
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
     background-color: #f9f9f9;
     text-align: center;
-    padding-top: 20px; /* Optional: Add some space from the top */
+    padding-top: 20px;
     background-color: rgb(173,216,230);
 }
 
-/* Container for media info */
-#media-info {
-    width: 80%; /* Set a max width to keep it centered */
+#main {
+    width: 80%;
     max-width: 800px;
     padding: 20px;
     background-color: white;
@@ -28,7 +25,6 @@ body {
     background-color: rgb(255, 105, 180);
 }
 
-/* Title styling */
 #Title {
     font-size: 4rem;
     font-weight: bold;
@@ -37,31 +33,28 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-/* Rectangular image with rounded edges */
 #CoverArt {
-    width: 600px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height to make it rectangular */
-    border-radius: 20px; /* This will round the corners */
-    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
-/* Rating styling */
 #Rating {
     font-size: 1.2rem;
     color: #ffcc00;
     margin-bottom: 20px;
 }
 
-/* Ensure the iframe and link are stacked vertically */
 iframe {
-    display: block; /* Make iframe a block element to ensure it takes up its own line */
-    margin: 0 auto 20px auto; /* Center the iframe and add space below it */
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
 a {
-    display: block; /* Make the link a block element to ensure it takes up its own line */
-    margin: 0 auto; /* Center the link horizontally */
+    display: block;
+    margin: 0 auto;
     color: #007BFF;
     text-decoration: none;
     font-size: 1.1rem;
@@ -69,7 +62,7 @@ a {
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 200px; /* Optionally set a max width if you want to limit the size */
+    max-width: 200px;
 }
 
 a:hover {
@@ -77,7 +70,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Summary text */
 #Summary {
     font-size: 1rem;
     line-height: 1.6;
@@ -87,42 +79,38 @@ a:hover {
 
 #actor-container {
     display: flex;
-    justify-content: center; /* Center the lists horizontally */
-    align-items: flex-start; /* Align items to the top of the container */
-    gap: 20px; /* Space between the lists */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
     padding: 20px;
-    margin: 0 auto; /* Center the container */
-    max-width: 800px; /* Optional: Limit the width of the container */
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-/* Individual actor lists */
 #MILFS, #Sons {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
     margin: 0;
-    width: 45%; /* Each list takes up 45% of the container's width */
+    width: 45%;
 }
 
-/* Actor list items */
 #MILFS li, #Sons li {
-    display: flex; /* Align image and text horizontally */
-    align-items: center; /* Vertically center the image and text */
-    margin-bottom: 15px; /* Space between list items */
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-/* Actor images */
 .actor-img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Make images circular */
-    margin-right: 10px; /* Space between image and text */
-    object-fit: cover; /* Ensure the image fits the box */
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
 }
 
-/* Styling for text */
 #MILFS li, #Sons li {
     font-size: 1.5rem;
     color: #333;
@@ -130,5 +118,5 @@ a:hover {
 
 .rating {
     font-size: 3rem;
-    color: gold; /* Color for filled stars */
+    color: gold;
 }
