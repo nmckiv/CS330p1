@@ -9,10 +9,11 @@ html, body {
 body {
     display: flex;
     justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    height: 100vh; /* Ensure full viewport height is used */
+    align-items: flex-start; /* Align items closer to the top */
+    min-height: 100vh; /* Ensure full viewport height is used */
     background-color: #f9f9f9;
     text-align: center;
+    padding-top: 20px; /* Optional: Add some space from the top */
 }
 
 /* Container for media info */

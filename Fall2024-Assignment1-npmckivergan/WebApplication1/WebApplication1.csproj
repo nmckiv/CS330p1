@@ -13,8 +13,4 @@
     <None Remove="wwwroot\NewFolder\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\Media\" />
-  </ItemGroup>
-
 </Project>
